@@ -13,16 +13,17 @@ namespace Homework
             int countPeople;
             int timePerson = 10;
             int timeWaiting;
-            int hour, minute;
+            int hourWaiting;
+            int minuteWaiting;
 
             Console.Write("Введите количество старушек в очереди - ");
             countPeople = Convert.ToInt32(Console.ReadLine());
 
             timeWaiting = countPeople * timePerson;
-            hour = timeWaiting / 60;
-            minute = timeWaiting % 60;
+            hourWaiting = timeWaiting / 60;
+            minuteWaiting = timeWaiting % 60;
 
-            Console.WriteLine("Вам осталось ждать " + hour + " часа " + minute + " минут");
+            Console.WriteLine("Вам осталось ждать " + hourWaiting + " часа " + minuteWaiting + " минут");
         }
     }
 }
