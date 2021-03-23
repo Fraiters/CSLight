@@ -10,17 +10,20 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            string message = "Да прибудет с тобой сила!";
-            int n;
+            string message;
+            int numberRepeat;
+
+            Console.Write("Введите сообщение: ");
+            message = Console.ReadLine();
 
             Console.Write("Введите количество повторений: ");
-            n = Convert.ToInt32(Console.ReadLine());
-            
-            for (int i = 0; i < n; i++)
+            numberRepeat = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < numberRepeat; i++)
             {
                 Console.WriteLine(message);
             }
-            
+
         }
     }
 }
