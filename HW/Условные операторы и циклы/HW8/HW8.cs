@@ -23,6 +23,15 @@ namespace Homework
             bool isChickenWizard = false;
             bool isChickenBoss = false;
 
+            int rndNumber1 = 1;
+            int rndNumber2 = 2;
+            int rndNumber3 = 3;
+            int rndNumber4 = 4;
+            int rndNumber5 = 5;
+            int rndNumber6 = 6;
+            int rndNumber8 = 8;
+            int rndNumber10 = 10;
+
             int countChicken = 0;
             int countFireball = 0;
             int maxCountFireball = 3;
@@ -89,14 +98,14 @@ namespace Homework
                         case 1:
 
                             Console.WriteLine("\nВы запускаете фаербол...");
-                            randomEvent = rnd.Next(1, 4);
+                            randomEvent = rnd.Next(rndNumber1, rndNumber4);
                             countFireball++;
 
                             if (randomEvent == 1)
                             {
-                                damageWizard = rnd.Next(1, 2) * 100;
+                                damageWizard = rnd.Next(rndNumber1, rndNumber2) * 100;
                                 Console.WriteLine("Ваш фаербол влетел БОССУ прямо в челюсть \nБОСС потерял " + damageWizard + " ед. здоровья");
-                                damageBoss = rnd.Next(1, 2) * 50;
+                                damageBoss = rnd.Next(rndNumber1, rndNumber2) * 50;
 
                                 if (isShield)
                                     damageBoss /= 2;
@@ -110,7 +119,7 @@ namespace Homework
                             else
                                 if (randomEvent == 2)
                             {
-                                damageBoss = rnd.Next(1, 2) * 50;
+                                damageBoss = rnd.Next(rndNumber1, rndNumber2) * 50;
 
                                 if (isShield)
                                     damageBoss /= 2;
@@ -123,7 +132,7 @@ namespace Homework
                             else
                                 if (randomEvent == 3)
                             {
-                                damageWizard = rnd.Next(1, 6) * 50;
+                                damageWizard = rnd.Next(rndNumber1, rndNumber6) * 50;
                                 Console.WriteLine("Ваш фаербол попал БОССУ в солнечное сплетение \nБОСС потерял " + damageWizard + " ед. здоровья");
                                 Console.WriteLine("БОСС разозлился и хотел вам ответить, но из-за долгой одышки не успел даже кулачком махнуть!");
 
@@ -137,7 +146,7 @@ namespace Homework
                             Console.WriteLine("\nВы покрываетесь льдом...");
                             Console.WriteLine("На вас действует ледяной щит, теперь вы получаете на 50% меньше урона от БОССА, однако ваш щит могут разрушить...");
                             isShield = true;
-                            randomEvent = rnd.Next(1, 3);
+                            randomEvent = rnd.Next(rndNumber1, rndNumber3);
 
                             if (randomEvent == 1)
                             {
@@ -147,7 +156,7 @@ namespace Homework
                             else
                                 if (randomEvent == 2)
                             {
-                                damageBoss = rnd.Next(5, 10) * 10;
+                                damageBoss = rnd.Next(rndNumber5, rndNumber10) * 10;
 
                                 if (isShield)
                                     damageBoss /= 2;
@@ -170,7 +179,7 @@ namespace Homework
                                 if (choice == 1)
                                 {
                                     Console.WriteLine("\nА вы действительно смельчак! Вы применяете заклинание *Курица*...");
-                                    randomEvent = rnd.Next(1, 3);
+                                    randomEvent = rnd.Next(rndNumber1, rndNumber3);
 
                                     if (randomEvent == 1)
                                     {
@@ -212,11 +221,11 @@ namespace Homework
                             if (countFireball >= 3)
                             {
                                 countFireball = 0;
-                                damageWizard = rnd.Next(3, 4) * 100;
+                                damageWizard = rnd.Next(rndNumber3, rndNumber4) * 100;
                                 Console.WriteLine("Вы наконец-то используете Супер Пупер УДАР");
                                 Console.WriteLine("Ваш кулак превращается в настоящую кувалду!");
                                 Console.WriteLine("Вы со всей дури бьете БОССУ по морде и он теряет " + damageWizard + " ед. здоровья");
-                                damageBoss = rnd.Next(1, 2) * 100;
+                                damageBoss = rnd.Next(rndNumber1, rndNumber2) * 100;
 
                                 if (isShield)
                                     damageBoss /= 2;
