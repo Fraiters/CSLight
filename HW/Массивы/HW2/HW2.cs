@@ -15,7 +15,7 @@ namespace Homework
 
             int maxElement = 0;
 
-            Console.WriteLine("Исходная матрица:");
+            Console.WriteLine("РСЃС…РѕРґРЅР°СЏ РјР°С‚СЂРёС†Р°:");
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
@@ -46,10 +46,10 @@ namespace Homework
                 }
             }
 
-            Console.WriteLine("Наибольший элемент матрицы:");
+            Console.WriteLine("РќР°РёР±РѕР»СЊС€РёР№ СЌР»РµРјРµРЅС‚ РјР°С‚СЂРёС†С‹:");
             Console.WriteLine(maxElement);
 
-            Console.WriteLine("Полученная матрица:");
+            Console.WriteLine("РџРѕР»СѓС‡РµРЅРЅР°СЏ РјР°С‚СЂРёС†Р°:");
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
