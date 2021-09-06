@@ -12,16 +12,16 @@ namespace Homework
         {
             int[] array = new int[0];
             string inputData;
+            bool isWork = true;
 
-
-            while (true)
+            while (isWork)
             {
-                Console.WriteLine("Введите число, команду sum или команду exit :");
+                Console.WriteLine("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ, РєРѕРјР°РЅРґСѓ sum РёР»Рё РєРѕРјР°РЅРґСѓ exit :");
                 inputData = Console.ReadLine();
 
                 if (inputData == "exit")
                 {
-                    break;
+                    isWork = false;
                 }
                 else if (inputData == "sum")
                 {
@@ -33,11 +33,13 @@ namespace Homework
                         {
                             sum += array[i];
                         }
-                        Console.WriteLine("Сумма введеных чисел:");
+                        Console.WriteLine("РЎСѓРјРјР° РІРІРµРґРµРЅС‹С… С‡РёСЃРµР»:");
                         Console.WriteLine(sum);
                     }
                     else
-                        Console.WriteLine("Невозможно найти сумму т.к. вы не ввели ни одного числа");
+                    {
+                        Console.WriteLine("РќРµРІРѕР·РјРѕР¶РЅРѕ РЅР°Р№С‚Рё СЃСѓРјРјСѓ С‚.Рє. РІС‹ РЅРµ РІРІРµР»Рё РЅРё РѕРґРЅРѕРіРѕ С‡РёСЃР»Р°");
+                    }                 
                 }
                 else
                 {
@@ -51,7 +53,7 @@ namespace Homework
                 }
             }
 
-            Console.WriteLine("Вы завершили программу");
+            Console.WriteLine("Р’С‹ Р·Р°РІРµСЂС€РёР»Рё РїСЂРѕРіСЂР°РјРјСѓ");
             Console.ReadKey();
         }
     }
