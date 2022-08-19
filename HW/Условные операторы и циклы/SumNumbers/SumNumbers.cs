@@ -11,16 +11,16 @@ namespace Homework
             int number = random.Next(limit);
             int counter = 0;
             int sum = 0;
-            int digit3 = 3;
-            int digit5 = 5;
+            int oneDivisor = 3;
+            int twoDivisor = 5;
 
             Console.WriteLine($"lim = {number}");
 
-           for (counter = 0; counter <= number; counter++)
+            for (counter = 0; counter <= number; counter++)
             {
-                if (counter % digit3 == 0 || counter % digit5 == 0)
+                if (counter % oneDivisor == 0 || counter % twoDivisor == 0)
                 {
-                    
+
                     sum += counter;
                 }
                 Console.WriteLine($"counter = {counter}");
