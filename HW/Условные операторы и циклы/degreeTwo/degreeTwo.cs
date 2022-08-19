@@ -2,7 +2,7 @@ using System;
 
 namespace Homework
 {
-    class ChangeValues
+    class DegreeTwo
     {
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace Homework
             {
                 count++;
             }
-            Console.WriteLine($" ×èñëî: {number} <  {Math.Pow(baseDegree, count)} (÷èñëî 2 â ñòåïåíè {count})");
+            Console.WriteLine($" Ã—Ã¨Ã±Ã«Ã®: {number} <  {Math.Pow(baseDegree, count)} (Ã·Ã¨Ã±Ã«Ã® 2 Ã¢ Ã±Ã²Ã¥Ã¯Ã¥Ã­Ã¨ {count})");
             Console.ReadKey();
         }
     }
