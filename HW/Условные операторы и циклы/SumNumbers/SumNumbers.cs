@@ -6,21 +6,24 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random(); 
-            int lim = rnd.Next(100);
+            Random random = new Random();
+            int limit = 100;
+            int number = random.Next(limit);
             int counter = 0;
             int sum = 0;
-            
-            Console.WriteLine($"lim = {lim}");
+            int digit3 = 3;
+            int digit5 = 5;
 
-            while(counter <= lim)
+            Console.WriteLine($"lim = {number}");
+
+           for (counter = 0; counter <= number; counter++)
             {
-                if (counter % 3 == 0 || counter % 5 == 0)
+                if (counter % digit3 == 0 || counter % digit5 == 0)
                 {
+                    
                     sum += counter;
                 }
                 Console.WriteLine($"counter = {counter}");
-                counter++;
             }
 
             Console.WriteLine($"sum = {sum}");
