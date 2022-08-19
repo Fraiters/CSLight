@@ -22,10 +22,10 @@ namespace Homework
 
             if (count1 != count2)
             {
-                Console.WriteLine("Строка некорректна");
+                Console.WriteLine("РЎС‚СЂРѕРєР° РЅРµРєРѕСЂСЂРµРєС‚РЅР°");
             }
             else
-                Console.WriteLine($"Строка корректна, максимальная глубина вложенности скобок: {count1 - 1}");
+                Console.WriteLine($"РЎС‚СЂРѕРєР° РєРѕСЂСЂРµРєС‚РЅР°, РјР°РєСЃРёРјР°Р»СЊРЅР°СЏ РіР»СѓР±РёРЅР° РІР»РѕР¶РµРЅРЅРѕСЃС‚Рё СЃРєРѕР±РѕРє: {count1 - 1}");
             Console.ReadKey();
         }
     }
