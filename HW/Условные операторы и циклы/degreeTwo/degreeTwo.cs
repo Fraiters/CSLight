@@ -14,7 +14,7 @@ namespace Homework
             {
                 count++;
             }
-            Console.WriteLine($" ×èñëî: {number} <  {Math.Pow(baseDegree, count)} (÷èñëî 2 â ñòåïåíè {count})");
+            Console.WriteLine($" Число: {number} <  {Math.Pow(baseDegree, count)} (число 2 в степени {count})");
             Console.ReadKey();
         }
     }
