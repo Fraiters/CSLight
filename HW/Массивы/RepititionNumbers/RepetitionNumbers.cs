@@ -6,13 +6,13 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            const int length = 30;
-            int[] array = new int [length];
+            const int Length = 30;
+            int[] array = new int [Length];
             int count = 1;
             int maxCount = 0;
             int value = 0;
 
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < Length; i++)
             {
                 array [i] = 4;
             }
@@ -23,7 +23,7 @@ namespace Homework
             array [6] = 5;
             array [7] = 5;
 
-            for (int i = 0; i < length - 1; i++)
+            for (int i = 0; i < Length - 1; i++)
             {
                 if (array [i] == array [i + 1] )
                 {
@@ -40,10 +40,10 @@ namespace Homework
                 }
             }
 
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < Length; i++)
             {
                 Console.Write($" {array [i]} ");
-            }             
+            } 
 
             Console.WriteLine();
             Console.WriteLine($"Число {value} повторяется большее число раз подряд ({maxCount})");
