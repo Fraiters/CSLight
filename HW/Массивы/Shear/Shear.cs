@@ -11,7 +11,7 @@ namespace Homework
             int j = 0;
             int firstElement = 0;
 
-            Console.WriteLine("Начальный массив:");  
+            Console.WriteLine("РќР°С‡Р°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ:");  
             
             for (int i = 0; i < array.Length; i++)
             {
@@ -34,7 +34,7 @@ namespace Homework
 
                     
             Console.WriteLine();
-            Console.WriteLine($"Конечный массив со сдвигом влево {stepShear} раз:");
+            Console.WriteLine($"РљРѕРЅРµС‡РЅС‹Р№ РјР°СЃСЃРёРІ СЃРѕ СЃРґРІРёРіРѕРј РІР»РµРІРѕ {stepShear} СЂР°Р·:");
 
             for (int i = 0; i < array.Length; i++)
             {
