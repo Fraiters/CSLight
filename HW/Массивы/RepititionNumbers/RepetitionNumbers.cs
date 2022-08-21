@@ -46,7 +46,7 @@ namespace Homework
             }             
 
             Console.WriteLine();
-            Console.WriteLine($"Число {value} повторяется большее число раз подряд ({maxCount})");
+            Console.WriteLine($"Р§РёСЃР»Рѕ {value} РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ Р±РѕР»СЊС€РµРµ С‡РёСЃР»Рѕ СЂР°Р· РїРѕРґСЂСЏРґ ({maxCount})");
             Console.ReadKey();
         }
     }
