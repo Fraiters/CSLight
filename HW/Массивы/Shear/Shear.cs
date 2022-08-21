@@ -8,7 +8,7 @@ namespace Homework
         {
             int[] array = { 1, 2, 3, 4, 5, 6 };
             int stepShear = 2;
-            int j = 0;
+            int currentStep = 0;
             int firstElement = 0;
 
             Console.WriteLine("Начальный массив:");  
@@ -18,7 +18,7 @@ namespace Homework
                 Console.Write($" {array[i]} ");
             }
 
-            while (j < stepShear)
+            while (currentStep < stepShear)
             {
                 firstElement = array[0];
                 
@@ -28,7 +28,7 @@ namespace Homework
                        
                 }
                 
-                j++;
+                currentStep++;
                 array[array.Length - 1] = firstElement;
             }
 
